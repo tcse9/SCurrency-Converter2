@@ -3,13 +3,85 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/layoutSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <ImageButton
+	        android:id="@+id/btnSetting"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:background="@drawable/selector_setting_button" />
+       
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutSpinner"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:padding="@dimen/padding_medium"
-        android:text="@string/hello_world"
-        tools:context=".MainActivityCurrency" />
+        android:layout_below="@+id/layoutSetting"
+        android:gravity="center" >
+
+        <Spinner
+            android:id="@+id/spinnerTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" 
+            android:layout_centerVertical="true" />
+
+        <ImageButton
+            android:id="@+id/btnConvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/spinnerTo"
+            android:layout_toRightOf="@+id/spinnerFrom"
+            android:background="@drawable/selector_convert_button" />
+
+        <Spinner
+            android:id="@+id/spinnerFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layoutSpinner" 
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtFrom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Put a number here" 
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1">
+
+        </EditText>
+        
+        <TextView
+            android:id="@+id/txtTo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="0.0000"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+
+        </TextView>
+
+    </LinearLayout>
 
 </RelativeLayout>
