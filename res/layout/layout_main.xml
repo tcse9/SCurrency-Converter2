@@ -63,6 +63,9 @@
             android:layout_height="match_parent"
             android:hint="Put a number here" 
             android:inputType="numberDecimal"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
             android:gravity="center"
             android:background="@android:color/white"
             android:layout_marginRight="5dp"
@@ -77,11 +80,42 @@
             android:background="@android:color/white"
             android:gravity="center"
             android:text="0.0000"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
             android:layout_marginLeft="5dp"
             android:layout_weight="1">
 
         </TextView>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" 
+        android:layout_below="@+id/layoutInput"
+        android:background="@drawable/horizontal_bar"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="1 USD equals to"/>
+        
+    </LinearLayout>
+    
+    <ListView 
+        android:id="@+id/listCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/layoutBar"
+        android:layout_alignParentLeft="true"/>
+        
+    
 
 </RelativeLayout>
