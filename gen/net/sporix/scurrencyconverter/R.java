@@ -128,20 +128,22 @@ public final class R {
         public static final int btnOkSetting=0x7f080010;
         public static final int btnSetting=0x7f080001;
         public static final int image=0x7f080013;
+        public static final int label=0x7f080016;
         public static final int layoutBar=0x7f080009;
         public static final int layoutInput=0x7f080006;
         public static final int layoutSetting=0x7f080000;
         public static final int layoutSpinner=0x7f080002;
         public static final int linSetting=0x7f08000b;
         public static final int listCurrency=0x7f08000a;
-        public static final int menu_settings=0x7f080016;
+        public static final int logo=0x7f080015;
+        public static final int menu_settings=0x7f080018;
         public static final int spin1=0x7f08000c;
         public static final int spin2=0x7f08000d;
         public static final int spin3=0x7f08000e;
         public static final int spin4=0x7f08000f;
         public static final int spinnerFrom=0x7f080005;
         public static final int spinnerTo=0x7f080003;
-        public static final int splashscreen=0x7f080015;
+        public static final int splashscreen=0x7f080017;
         public static final int txtFrom=0x7f080007;
         public static final int txtInfo=0x7f080012;
         public static final int txtListItem=0x7f080014;
@@ -151,7 +153,8 @@ public final class R {
         public static final int layout_main=0x7f030000;
         public static final int layout_setting=0x7f030001;
         public static final int row=0x7f030002;
-        public static final int splash=0x7f030003;
+        public static final int spinner_item=0x7f030003;
+        public static final int splash=0x7f030004;
     }
     public static final class menu {
         public static final int layout_main=0x7f070000;

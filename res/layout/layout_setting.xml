@@ -80,7 +80,7 @@
 	       android:layout_width="fill_parent"
 	       android:layout_height="wrap_content"
 	       android:textSize="20dp"
-	       android:text="You can choose your 5 favourite currency now, also you can change them later">
+	       android:text="You can choose your 4 favourite currency now, also you can change them later">
 	       
 	       
 	   	</TextView>
